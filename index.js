@@ -29,3 +29,8 @@ function calculate() {
 	document.getElementById('display').value = result;
 	displayValue = result;
 }
+
+function clearDisplay() {
+	displayValue = '';
+	document.getElementById('display').value = displayValue;
+}
