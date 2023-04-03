@@ -20,3 +20,12 @@ function addOperator(operator) {
 
 	document.getElementById('display').value = displayValue;
 }
+
+function calculate() {
+	if (displayValue === '') return;
+
+	let result = eval(displayValue);
+
+	document.getElementById('display').value = result;
+	displayValue = result;
+}
